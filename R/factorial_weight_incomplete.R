@@ -123,7 +123,6 @@ factorial_weight_incomplete<-function(X,z,y,o=1,variance=TRUE,model='interaction
         CR1=length(effect_index[[k]])==length(effect_index[[j]])
         CR2=(length(effect_index[[k]])!=length(effect_index[[j]])) & 
           (!all(effect_index[[k]])%in%length(effect_index[[j]]))
-        print(CR1 | CR2)
         if (CR1 | CR2){
           ind_obs=zfull[,j]
           ind_des=Gnew[,j]
